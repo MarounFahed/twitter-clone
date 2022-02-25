@@ -1,7 +1,7 @@
 # twitter-clone-pwj-module-10
  Profit with JavaScript - Module 10: Twitter Clone
 
-In this Module I worked on a Twitter Clone. What I learned:
+In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I learned:
 - Build a Twitter Clone
 - Advance CSS with FlexBox
 - Work with External APIs (Twitter API)
