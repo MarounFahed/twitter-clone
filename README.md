@@ -27,7 +27,7 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 ## Business Requirements
 1. Pages
 	a. Home Page
-2. Home Page
+3. Home Page
 	a. Allow a user to type in an search for tweets based on what they type
 	b. Show the list of tweets based on search
 		i. Show text
