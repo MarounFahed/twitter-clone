@@ -26,23 +26,23 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 
 ## Business Requirements
 1. Pages
-   a. Home Page
+   - Home Page
 2. Home Page
-   a. Allow a user to type in an search for tweets based on what they type
-   b. Show the list of tweets based on search
-      i. Show text
-		ii. Show images if available
-		iii. Show video if available
-		iv. Show gif if available
-		v. Show how long ago this tweet was created
-		vi. Show the user who created the tweet full name
-		vii. Show the profile of the user who created the tweet
-		viii. Show the twitter handle of the user who created the tweet
-	c. Show 10 tweets only at the start
-	d. Allow a user to get the next 10 tweets or the next page of the tweets
-	e. Show trending hashtags in a list
-	f. Allow a user to click on the trending hashtag and search for it
-	g. Show the profile photo of the person using the app
+   - Allow a user to type in an search for tweets based on what they type
+   - Show the list of tweets based on search
+     - Show text
+     - Show images if available
+     - Show video if available
+     - Show gif if available
+     - Show how long ago this tweet was created
+     - Show the user who created the tweet full name
+     - Show the profile of the user who created the tweet
+     - Show the twitter handle of the user who created the tweet
+   - Show 10 tweets only at the start
+   - Allow a user to get the next 10 tweets or the next page of the tweets
+   - Show trending hashtags in a list
+   - Allow a user to click on the trending hashtag and search for it
+   - Show the profile photo of the person using the app
 
 ## Techincal Requirements
 - Create a Developer Account for Twitter
