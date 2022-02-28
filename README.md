@@ -25,6 +25,29 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 ![Flow Diagram Image](https://raw.githubusercontent.com/MarounFahed/twitter-clone-pwj-module-10/main/Flow-Diagram.png)
 
 ## Business Requirements
-
+1. Pages
+	a. Home Page
+2. Home Page
+	a. Allow a user to type in an search for tweets based on what they type
+	b. Show the list of tweets based on search
+		i. Show text
+		ii. Show images if available
+		iii. Show video if available
+		iv. Show gif if available
+		v. Show how long ago this tweet was created
+		vi. Show the user who created the tweet full name
+		vii. Show the profile of the user who created the tweet
+		viii. Show the twitter handle of the user who created the tweet
+	c. Show 10 tweets only at the start
+	d. Allow a user to get the next 10 tweets or the next page of the tweets
+	e. Show trending hashtags in a list
+	f. Allow a user to click on the trending hashtag and search for it
+	g. Show the profile photo of the person using the app
 
 ## Techincal Requirements
+- Create a Developer Account for Twitter
+- Make sure to only show the next page link when there are results for next page
+	- Use the attribute "mext_results"
+- Use moment.js for showing the date of the tweet from the current date
+- Use the documentation for getting Search Tweets
+- API Endpoints: 
