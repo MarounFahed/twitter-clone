@@ -25,14 +25,12 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 ![Flow Diagram Image](https://raw.githubusercontent.com/MarounFahed/twitter-clone-pwj-module-10/main/Flow-Diagram.png)
 
 ## Business Requirements
-- Pages
--       Home Page
-100. First list item
-     - First nested list item
-3. Home Page
-	a. Allow a user to type in an search for tweets based on what they type
-	b. Show the list of tweets based on search
-		i. Show text
+1. Pages
+   a. Home Page
+2. Home Page
+   a. Allow a user to type in an search for tweets based on what they type
+   b. Show the list of tweets based on search
+      i. Show text
 		ii. Show images if available
 		iii. Show video if available
 		iv. Show gif if available
