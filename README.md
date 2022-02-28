@@ -51,3 +51,7 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 - Use moment.js for showing the date of the tweet from the current date
 - Use the documentation for getting Search Tweets
 - API Endpoints: 
+
+
+# Wireframe
+![Twitter Wireframe Image](https://raw.githubusercontent.com/MarounFahed/twitter-clone-pwj-module-10/main/Wireframe.drawio.png)
