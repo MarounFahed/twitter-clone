@@ -7,14 +7,55 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  background-color: blue;
+  background-color: #0f0f11;
 }
 
 .navigation-container {
   width: 20%;
-  background-color: aqua;
   max-width: 100px;
   min-width: 70px;
+  border: 1px solid #1c1c1c;
+}
+
+.navigation {
+  color: white;
+  margin-top: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo i {
+  font-size: 30px;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  border-right: 3px solid #00adff;
+  margin-top: 20px;
+}
+
+.home-link i {
+  color: #00adff;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #979797;
 }
 
 .main {
