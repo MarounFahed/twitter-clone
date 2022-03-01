@@ -58,8 +58,38 @@ In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I le
 - Use the documentation for getting Search Tweets
 - API Endpoints:
 
-# Wireframe
+## Wireframe
 
 Drawn on **[draw.io](https://www.draw.io/)**
 
 ![Twitter Wireframe Image](https://raw.githubusercontent.com/MarounFahed/twitter-clone-pwj-module-10/main/Wireframe.drawio.png)
+
+
+# General TODOS
+1. Create the home page structure for index.html
+2. Create HTML and Style for navigation
+3. Create HTML and Style for Input Box
+4. Create HTML and Style for Individual Tweet
+5. Complete User Info HTML and Styling
+6. Create HTML and Style for Trending Box
+7. Set up NodeJS Server
+8. Create API endpoint /tweeets to return a list of tweets based on query
+9. Create Twitter get() helper function to move the Twitter API logic
+10. Move the API Token to .env file and import it
+11. Complete getTwitterData() function to retrieve data from our API
+12. Get search input and use it to build a url like the one above
+13. Get twitter data when a user hits enter
+14. Complete buildTweets() function to show the Tweets List(only text)
+15. Add abiliy to show images in the tweets
+16. Add ability to show videos in the tweets
+17. Add ability to show gifs in the tweets
+18. Show user info in the tweets
+19. Use moment.js to show the date of tweet
+20. Complete selectTrend() function to allow a user to click on the trend and search for it
+21. Create HTML and Style for Next Page Button
+22. Showing Next Page of Tweets
+23. Save Next Page URL
+24. Load tweets when selecting the next page button
+25. Fix logic to replace tweets when searching, but append tweets when going to next page
+26. Show next page button only when there is a next page
+27. Clean Up
