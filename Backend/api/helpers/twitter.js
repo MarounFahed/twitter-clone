@@ -10,7 +10,7 @@ class Twitter {
         max_results: max_results,
       },
       headers: {
-        Authorization: 'Bearer 123123',
+        Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,
       },
     })
   }
