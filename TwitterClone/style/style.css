@@ -7,7 +7,7 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  background-color: #0f0f11;
+  background-color: #606072;
 }
 
 .navigation-container {
@@ -65,9 +65,7 @@ body {
 }
 
 .tweets-list {
-  height: 500px;
   margin: 20px;
-  background-color: #516bf0;
 }
 
 .tweets-search-container {
@@ -94,14 +92,6 @@ body {
   color: white;
   font-size: 30px;
   padding-left: 10px;
-}
-
-.tweet-container {
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  background-color: white;
-  margin: 10px;
 }
 
 .tweets-sidebar-container {

@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tweet.css">
     <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
     <title>Twitter</title>
 </head>
 
 <body>
     <div class="container home-page">
+
+        <!--NAVIGATION BAR START-->
         <div class="navigation-container">
             <div class="navigation">
                 <div class="logo">
@@ -26,23 +29,48 @@
                 </div>
             </div>
         </div>
+        <!--NAVIGATION BAR END-->
 
-
+        <!--MAIN START-->
         <div class="main">
+
+            <!--TWEETS SEARCH CONTAINER START-->
             <div class="tweets-search-container">
                 <input id="user-search-input" type="text" placeholder="Search Twitter" />
                 <i class="fas fa-search fa-flip-horizontal"></i>
             </div>
+            <!--TWEETS SEARCH CONTAINER START-->
+
+            <!--TWEETS LIST START-->
             <div class="tweets-list">
                 <div class="tweet-container">
+                    <div class="tweet-user-info"></div>
 
+                    <div class="tweet-images-container"></div>
+
+                    <div class="tweet-text-container">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis diam sit amet auctor
+                        finibus. Duis fringilla finibus mauris, at blandit ipsum viverra et. In hac habitasse platea
+                        dictumst. Morbi eu malesuada enim. In vel arcu a neque semper lobortis. Pellentesque vulputate
+                        malesuada tellus et condimentum. In rutrum fringilla dui. Cras non dolor ultrices, suscipit
+                        turpis ut, cursus nisl
+                    </div>
+
+                    <div class="tweet-date-container">
+                        20 hours ago
+                    </div>
                 </div>
             </div>
-        </div>
+            <!--TWEETS LIST END-->
 
+        </div>
+        <!--MAIN END-->
+
+        <!--TWEETS SIDEBAR START-->
         <div class="tweets-sidebar-container">
             <div class="tweets-sidebar"></div>
         </div>
+        <!--TWEETS SIDEBAR END-->
     </div>
 
 
