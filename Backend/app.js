@@ -1,25 +1,15 @@
-const { default: axios } = require('axios')
 const express = require('express')
 const app = express()
+const Twitter = require('./api/helpers/twitter')
+const twitter = new Twitter()
 const port = 3000
 
 app.get('/tweets', (req, res) => {
-  console.log(req.query)
   const query = req.query.q
   const max_results = req.query.count
 
-  const url = 'https://api.twitter.com/2/tweets/search/recent'
-  axios
-    .get(url, {
-      params: {
-        query: query,
-        max_results: max_results,
-      },
-      headers: {
-        Authorization:
-          'Bearer AAAAAAAAAAAAAAAAAAAAAFHoZgEAAAAAPMQwWuJE8cC%2Fb898lgmo9vg3SOk%3DtxRejBUmfrlEfeYRAsbPhyMYgsxzo9vsoykNOMFA7jMEgv3Kbk',
-      },
-    })
+  twitter
+    .get(query, max_results)
     .then((response) => {
       res.status(200).send(response.data)
     })
