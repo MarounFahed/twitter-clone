@@ -59,7 +59,6 @@ body {
 }
 
 .main {
-  background-color: coral;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -72,9 +71,29 @@ body {
 }
 
 .tweets-search-container {
-  height: 70px;
-  margin: 20px;
-  background-color: red;
+  margin: 30px 20px 20px 20px;
+  border-bottom: 1px solid #979797;
+  display: flex;
+  align-items: center;
+}
+
+.tweets-search-container input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  padding: 0px 10px;
+}
+
+.tweets-search-container input:focus {
+  outline: none;
+}
+
+.tweets-search-container i {
+  color: white;
+  font-size: 30px;
+  padding-left: 10px;
 }
 
 .tweet-container {
