@@ -1,5 +1,11 @@
 const URL = 'http://localhost:3000/tweets'
 
+/** On Enter for the Search Input */
+const onEnter = (e) => {
+  //keyCode = 13 --> key = 'Enter'
+  if (e.keyCode === 13) getTwitterData()
+}
+
 /** Retrieve Twitter Data from API */
 const getTwitterData = () => {
   const query = document.getElementById('user-search-input').value
