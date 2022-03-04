@@ -1,28 +1,48 @@
 const URL = 'http://localhost:3000/tweets'
 
+let nextPageURL = null
+
 /** On Enter for the Search Input */
 const onEnter = (e) => {
   //keyCode = 13 --> key = 'Enter'
   if (e.keyCode === 13) getTwitterData()
 }
 
+/** To get next page of data */
+const onNextage = () => {
+  if (nextPageURL) {
+    getTwitterData(true)
+  }
+}
+
 /** Retrieve Twitter Data from API */
-const getTwitterData = () => {
+const getTwitterData = (nextPage = false) => {
   const query = document.getElementById('user-search-input').value
   if (!query) return
   const encodedQuery = encodeURIComponent(query)
-  const fullURL = `${URL}?q=${encodedQuery}&count=10`
+  let fullURL = `${URL}?q=${encodedQuery}&count=10`
+  if (nextPage && nextPageURL) {
+    fullURL = nextPageURL
+  }
   fetch(fullURL)
     .then((response) => {
       return response.json()
     })
     .then((data) => {
-      buildTweets(data.statuses)
+      buildTweets(data.statuses, nextPage)
+      saveNextPage(data.search_metadata)
+      nextPageButtonVisbility(data.search_metadata)
     })
 }
 
 /** Save the next page data */
-const saveNextPage = (metadata) => {}
+const saveNextPage = (metadata) => {
+  if (metadata.next_results) {
+    nextPageURL = `${URL}${metadata.next_results}`
+  } else {
+    nextPageURL = null
+  }
+}
 
 /** Handle when a user click on a trend */
 const selectTrend = (e) => {
@@ -32,7 +52,13 @@ const selectTrend = (e) => {
 }
 
 /**Set the visibility of next page based on if there is data on next page */
-const nextPageButtonVisbility = (metadata) => {}
+const nextPageButtonVisbility = (metadata) => {
+  if (metadata.next_results) {
+    document.getElementById('next-page').style.visibility = 'visible'
+  } else {
+    document.getElementById('next-page').style.visibility = 'hidden'
+  }
+}
 
 /**Build Tweets HTML based on Data from API */
 const buildTweets = (tweets, nextPage) => {
@@ -71,7 +97,13 @@ const buildTweets = (tweets, nextPage) => {
 
     `
   })
-  document.querySelector('.tweets-list').innerHTML = twitterContent
+  if (nextPage) {
+    document
+      .querySelector('.tweets-list')
+      .insertAdjacentHTML('beforeend', twitterContent)
+  } else {
+    document.querySelector('.tweets-list').innerHTML = twitterContent
+  }
 }
 
 /** Build HTML for Tweets Images */

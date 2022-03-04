@@ -88,8 +88,8 @@ Drawn on **[draw.io](https://www.draw.io/)**
 20. Complete selectTrend() function to allow a user to click on the trend and search for it
 21. Create HTML and Style for Next Page Button
 22. Showing Next Page of Tweets
-23. Save Next Page URL
-24. Load tweets when selecting the next page button
-25. Fix logic to replace tweets when searching, but append tweets when going to next page
-26. Show next page button only when there is a next page
+    - Save Next Page URL
+    - Load tweets when selecting the next page button
+    - Fix logic to replace tweets when searching, but append tweets when going to next page
+    - Show next page button only when there is a next page
 27. Clean Up

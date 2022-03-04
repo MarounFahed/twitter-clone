@@ -7,12 +7,13 @@ const URLv1 = 'https://api.twitter.com/1.1/search/tweets.json'
  * IF URLv1 is being used --> switch the params to "q" and "count" */
 
 class Twitter {
-  get(query, max_results) {
+  get(query, max_results, maxId) {
     return axios.get(URLv1, {
       params: {
         q: query,
         count: max_results,
         tweet_mode: 'extended',
+        max_id: maxId,
       },
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,
