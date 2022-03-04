@@ -39,10 +39,10 @@ const buildTweets = (tweets, nextPage) => {
         <div class="tweet-container">
             <!--USER INFO START-->
             <div class="tweet-user-info">
-                <div class="tweet-user-profile"></div>
+                <div class="tweet-user-profile" style="background-image: url(${tweet.user.profile_image_url_https})"></div>
                 <div class="tweet-user-name-container">
-                    <div class="tweet-user-fullname">Maroun Fahed</div>
-                    <div class="tweet-user-username">@mfahed</div>
+                    <div class="tweet-user-fullname">${tweet.user.name}</div>
+                    <div class="tweet-user-username">@${tweet.user.screen_name}</div>
                 </div>
             </div>
             <!--USER INFO END-->
@@ -91,7 +91,7 @@ const buildVideo = (mediaList) => {
     if (media.type === 'video') {
       videoExists = true
       videoContent += `<video controls><source src="${media.video_info.variants[0].url}" type="video/mp4"></video>`
-    } else if ((media.type = 'animated_gif')) {
+    } else if (media.type === 'animated_gif') {
       videoExists = true
       videoContent += `<video loop autoplay><source src="${media.video_info.variants[0].url}" type="video/mp4"></video>`
     }
