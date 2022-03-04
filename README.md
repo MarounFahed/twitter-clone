@@ -96,3 +96,6 @@ Drawn on **[draw.io](https://www.draw.io/)**
 
 
 # End Result
+Results from search blurred
+![End Result 1](https://github.com/MarounFahed/twitter-clone/blob/main/end-result-1.png?raw=true)
+![End Result 2](https://github.com/MarounFahed/twitter-clone/blob/main/end-result-2.png?raw=true)
