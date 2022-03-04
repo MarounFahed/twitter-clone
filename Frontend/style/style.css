@@ -65,7 +65,7 @@ body {
 }
 
 .tweets-list {
-  margin: 20px;
+  margin: 20px 20px 0;
 }
 
 .tweets-search-container {
@@ -136,4 +136,19 @@ body {
   padding: 8px 20px;
   border-top: 1px solid #979797;
   cursor: pointer;
+}
+
+.next-page-container {
+  margin: 0 20px 20px;
+  color: #47525d;
+  border: 1px solid #1c1c1c;
+  border-radius: 20px;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.next-page-container:hover {
+  background-color: #1c1c1c;
 }
