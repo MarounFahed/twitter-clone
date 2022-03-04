@@ -5,6 +5,11 @@ const twitter = new Twitter()
 const port = 3000
 require('dotenv').config()
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  next()
+})
+
 app.get('/tweets', (req, res) => {
   const query = req.query.q
   const max_results = req.query.count
