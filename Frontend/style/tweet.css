@@ -39,6 +39,17 @@
   height: 200px;
   border: 1px solid #1c1c1c;
   border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.tweet-image {
+  background-image: url('https://images.unsplash.com/photo-1646309692295-44187932d99b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
+  flex-basis: 50%;
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 .tweet-text-container {

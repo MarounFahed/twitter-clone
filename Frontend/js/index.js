@@ -17,7 +17,7 @@ const getTwitterData = () => {
       return response.json()
     })
     .then((data) => {
-      buildTweets(data.data)
+      buildTweets(data.statuses)
     })
 }
 
@@ -34,7 +34,6 @@ const nextPageButtonVisbility = (metadata) => {}
 const buildTweets = (tweets, nextPage) => {
   let twitterContent = ''
   tweets.map((tweet) => {
-    console.log(tweet)
     twitterContent += `
         <!--INDIVIDUAL TWEET START-->
         <div class="tweet-container">
@@ -47,14 +46,14 @@ const buildTweets = (tweets, nextPage) => {
                 </div>
             </div>
             <!--USER INFO END-->
-
-            <!--TWEET IMAGES START-->
-            <div class="tweet-images-container"></div>
-            <!--TWEET IMAGES END-->
-
+    `
+    if (tweet.extended_entities && tweet.extended_entities.media.length > 0) {
+      twitterContent += buildImages(tweet.extended_entities.media)
+    }
+    twitterContent += `
             <!--TWEET TEXT START-->
             <div class="tweet-text-container">
-                ${tweet.text}
+                ${tweet.full_text}
             </div>
             <!--TWEET TEXT END-->
 
@@ -64,13 +63,24 @@ const buildTweets = (tweets, nextPage) => {
         </div>
         <!--INDIVIDUAL TWEET END-->
 
-        `
+    `
   })
   document.querySelector('.tweets-list').innerHTML = twitterContent
 }
 
 /** Build HTML for Tweets Images */
-const buildImages = (mediaList) => {}
+const buildImages = (mediaList) => {
+  let imagesContent = `<div class="tweet-images-container">`
+  let imageExists = false
+  mediaList.map((media) => {
+    if (media.type === 'photo') {
+      imageExists = true
+      imagesContent += `<div class="tweet-image" style="background-image: url(${media.media_url_https})"></div>`
+    }
+  })
+  imagesContent += `</div>`
+  return imageExists ? imagesContent : ''
+}
 
 /** Build HTML for Tweets Video */
 const buildVideo = (mediaList) => {}

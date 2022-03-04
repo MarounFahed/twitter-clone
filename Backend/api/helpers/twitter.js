@@ -8,10 +8,11 @@ const URLv1 = 'https://api.twitter.com/1.1/search/tweets.json'
 
 class Twitter {
   get(query, max_results) {
-    return axios.get(URLv2, {
+    return axios.get(URLv1, {
       params: {
-        query: query,
-        max_results: max_results,
+        q: query,
+        count: max_results,
+        tweet_mode: 'extended',
       },
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,
