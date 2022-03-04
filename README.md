@@ -92,4 +92,4 @@ Drawn on **[draw.io](https://www.draw.io/)**
     - Load tweets when selecting the next page button
     - Fix logic to replace tweets when searching, but append tweets when going to next page
     - Show next page button only when there is a next page
-27. Clean Up
+23. Clean Up
