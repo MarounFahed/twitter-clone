@@ -92,6 +92,7 @@ body {
   color: white;
   font-size: 30px;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .tweets-sidebar-container {
