@@ -34,6 +34,7 @@ const nextPageButtonVisbility = (metadata) => {}
 const buildTweets = (tweets, nextPage) => {
   let twitterContent = ''
   tweets.map((tweet) => {
+    const createdDate = moment(tweet.created_at).fromNow()
     twitterContent += `
         <!--INDIVIDUAL TWEET START-->
         <div class="tweet-container">
@@ -59,7 +60,7 @@ const buildTweets = (tweets, nextPage) => {
             <!--TWEET TEXT END-->
 
             <div class="tweet-date-container">
-                20 hours ago
+                ${createdDate}
             </div>
         </div>
         <!--INDIVIDUAL TWEET END-->
