@@ -25,7 +25,11 @@ const getTwitterData = () => {
 const saveNextPage = (metadata) => {}
 
 /** Handle when a user click on a trend */
-const selectTrend = (e) => {}
+const selectTrend = (e) => {
+  const text = e.innerText
+  document.getElementById('user-search-input').value = text
+  getTwitterData()
+}
 
 /**Set the visibility of next page based on if there is data on next page */
 const nextPageButtonVisbility = (metadata) => {}
