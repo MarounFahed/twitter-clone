@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .tweet-user-info {
