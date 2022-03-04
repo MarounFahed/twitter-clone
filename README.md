@@ -1,6 +1,6 @@
-# Profit with JavaScript - Module 10: Twitter Clone
+# Twitter Clone
 
-In this Module I worked on a Twitter Clone with JavaScript and NodeJS. What I learned:
+In this repo I worked on a Twitter Clone with JavaScript and NodeJS. What I learned:
 
 - Build a Twitter Clone
 - Advance CSS with FlexBox
