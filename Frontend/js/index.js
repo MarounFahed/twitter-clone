@@ -91,6 +91,9 @@ const buildVideo = (mediaList) => {
     if (media.type === 'video') {
       videoExists = true
       videoContent += `<video controls><source src="${media.video_info.variants[0].url}" type="video/mp4"></video>`
+    } else if ((media.type = 'animated_gif')) {
+      videoExists = true
+      videoContent += `<video loop autoplay><source src="${media.video_info.variants[0].url}" type="video/mp4"></video>`
     }
   })
   videoContent += `</div>`
